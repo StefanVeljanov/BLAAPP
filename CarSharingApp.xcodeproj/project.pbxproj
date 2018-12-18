@@ -1,0 +1,813 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28E5B8EA736AC57E78CA04C9 /* Pods_CarSharingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3724CF4D360B1AE03D9AAF7A /* Pods_CarSharingApp.framework */; };
+		3C990B0D21C9409800EA9A6A /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C990B0C21C9409800EA9A6A /* Ride.swift */; };
+		3C990B0F21C940CA00EA9A6A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C990B0E21C940CA00EA9A6A /* User.swift */; };
+		3C990B1121C9414100EA9A6A /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C990B1021C9414100EA9A6A /* Car.swift */; };
+		3CF0BB5621ABF44900E1C0A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF0BB5521ABF44900E1C0A9 /* AppDelegate.swift */; };
+		3CF0BB5B21ABF44900E1C0A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF0BB5921ABF44900E1C0A9 /* Main.storyboard */; };
+		3CF0BB5D21ABF44C00E1C0A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CF0BB5C21ABF44C00E1C0A9 /* Assets.xcassets */; };
+		3CF0BB6021ABF44C00E1C0A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF0BB5E21ABF44C00E1C0A9 /* LaunchScreen.storyboard */; };
+		3CF0BB6B21ABF44C00E1C0A9 /* CarSharingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF0BB6A21ABF44C00E1C0A9 /* CarSharingAppTests.swift */; };
+		3CF0BB7621ABF44C00E1C0A9 /* CarSharingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF0BB7521ABF44C00E1C0A9 /* CarSharingAppUITests.swift */; };
+		3CF0BB8421AC091800E1C0A9 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF0BB8321AC091800E1C0A9 /* LogInViewController.swift */; };
+		3CF0BB8821AC096600E1C0A9 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF0BB8721AC096600E1C0A9 /* MyProfileViewController.swift */; };
+		3CF0BB8A21AC097700E1C0A9 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF0BB8921AC097700E1C0A9 /* NotificationsViewController.swift */; };
+		C4DB5FC7EEA00F74E1960363 /* Pods_CarSharingAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C774803ABE4EE25296A3E853 /* Pods_CarSharingAppUITests.framework */; };
+		F9E0E5E6EB4C9C6E51066B4C /* Pods_CarSharingAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BBD31722583001E522FD88C /* Pods_CarSharingAppTests.framework */; };
+		FB0C440221C10DD90026ACCF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB0C440121C10DD90026ACCF /* CoreLocation.framework */; };
+		FB11951C21C2772B00A234E4 /* AutocompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB11951B21C2772B00A234E4 /* AutocompleteViewController.swift */; };
+		FB11D88621AC107300EECDBF /* startingPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB11D88521AC107300EECDBF /* startingPointViewController.swift */; };
+		FB2CDEFD21AC1B7E004F5B3E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2CDEFC21AC1B7E004F5B3E /* LocationManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CF0BB6721ABF44C00E1C0A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CF0BB4A21ABF44900E1C0A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CF0BB5121ABF44900E1C0A9;
+			remoteInfo = CarSharingApp;
+		};
+		3CF0BB7221ABF44C00E1C0A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CF0BB4A21ABF44900E1C0A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CF0BB5121ABF44900E1C0A9;
+			remoteInfo = CarSharingApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F5AF0F63D7B452B7ECFCB71 /* Pods-CarSharingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarSharingApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarSharingApp/Pods-CarSharingApp.release.xcconfig"; sourceTree = "<group>"; };
+		36B7979E5AA0A466681B2A70 /* Pods-CarSharingAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarSharingAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarSharingAppTests/Pods-CarSharingAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		3724CF4D360B1AE03D9AAF7A /* Pods_CarSharingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarSharingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C990B0C21C9409800EA9A6A /* Ride.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
+		3C990B0E21C940CA00EA9A6A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3C990B1021C9414100EA9A6A /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		3CF0BB5221ABF44900E1C0A9 /* CarSharingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarSharingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CF0BB5521ABF44900E1C0A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3CF0BB5A21ABF44900E1C0A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3CF0BB5C21ABF44C00E1C0A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3CF0BB5F21ABF44C00E1C0A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3CF0BB6121ABF44C00E1C0A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CF0BB6621ABF44C00E1C0A9 /* CarSharingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarSharingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CF0BB6A21ABF44C00E1C0A9 /* CarSharingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSharingAppTests.swift; sourceTree = "<group>"; };
+		3CF0BB6C21ABF44C00E1C0A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CF0BB7121ABF44C00E1C0A9 /* CarSharingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarSharingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CF0BB7521ABF44C00E1C0A9 /* CarSharingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSharingAppUITests.swift; sourceTree = "<group>"; };
+		3CF0BB7721ABF44C00E1C0A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CF0BB8321AC091800E1C0A9 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		3CF0BB8721AC096600E1C0A9 /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		3CF0BB8921AC097700E1C0A9 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		5A2552AC971885853B8F95C0 /* Pods-CarSharingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarSharingApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarSharingApp/Pods-CarSharingApp.debug.xcconfig"; sourceTree = "<group>"; };
+		6763130F26B082ABADBE3F4A /* Pods-CarSharingAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarSharingAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarSharingAppUITests/Pods-CarSharingAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9BBD31722583001E522FD88C /* Pods_CarSharingAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarSharingAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3B0C83733BED0F4CED7B5E8 /* Pods-CarSharingAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarSharingAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarSharingAppTests/Pods-CarSharingAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C774803ABE4EE25296A3E853 /* Pods_CarSharingAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarSharingAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E160F00CCE1EB0AB287F946B /* Pods-CarSharingAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarSharingAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarSharingAppUITests/Pods-CarSharingAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FB0C440121C10DD90026ACCF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FB11951B21C2772B00A234E4 /* AutocompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutocompleteViewController.swift; sourceTree = "<group>"; };
+		FB11D88521AC107300EECDBF /* startingPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startingPointViewController.swift; sourceTree = "<group>"; };
+		FB2CDEFC21AC1B7E004F5B3E /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CF0BB4F21ABF44900E1C0A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB0C440221C10DD90026ACCF /* CoreLocation.framework in Frameworks */,
+				28E5B8EA736AC57E78CA04C9 /* Pods_CarSharingApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CF0BB6321ABF44C00E1C0A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9E0E5E6EB4C9C6E51066B4C /* Pods_CarSharingAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CF0BB6E21ABF44C00E1C0A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4DB5FC7EEA00F74E1960363 /* Pods_CarSharingAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C990B0921C9402100EA9A6A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3CF0BB8321AC091800E1C0A9 /* LogInViewController.swift */,
+				FB11D88521AC107300EECDBF /* startingPointViewController.swift */,
+				3CF0BB8721AC096600E1C0A9 /* MyProfileViewController.swift */,
+				FB11951B21C2772B00A234E4 /* AutocompleteViewController.swift */,
+				3CF0BB8921AC097700E1C0A9 /* NotificationsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3C990B0A21C9402A00EA9A6A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3C990B0C21C9409800EA9A6A /* Ride.swift */,
+				3C990B0E21C940CA00EA9A6A /* User.swift */,
+				3C990B1021C9414100EA9A6A /* Car.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3C990B0B21C9404800EA9A6A /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+		3CF0BB4921ABF44900E1C0A9 = {
+			isa = PBXGroup;
+			children = (
+				3CF0BB5421ABF44900E1C0A9 /* CarSharingApp */,
+				3CF0BB6921ABF44C00E1C0A9 /* CarSharingAppTests */,
+				3CF0BB7421ABF44C00E1C0A9 /* CarSharingAppUITests */,
+				3CF0BB5321ABF44900E1C0A9 /* Products */,
+				5C0444B949A85F72F9AB0B40 /* Pods */,
+				4B574C7C82D79F3F7B0BD56B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3CF0BB5321ABF44900E1C0A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CF0BB5221ABF44900E1C0A9 /* CarSharingApp.app */,
+				3CF0BB6621ABF44C00E1C0A9 /* CarSharingAppTests.xctest */,
+				3CF0BB7121ABF44C00E1C0A9 /* CarSharingAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CF0BB5421ABF44900E1C0A9 /* CarSharingApp */ = {
+			isa = PBXGroup;
+			children = (
+				3CF0BB5521ABF44900E1C0A9 /* AppDelegate.swift */,
+				3CF0BB5921ABF44900E1C0A9 /* Main.storyboard */,
+				3C990B0921C9402100EA9A6A /* ViewControllers */,
+				3C990B0B21C9404800EA9A6A /* TableCells */,
+				3C990B0A21C9402A00EA9A6A /* Classes */,
+				3CF0BB5C21ABF44C00E1C0A9 /* Assets.xcassets */,
+				FB2CDEFC21AC1B7E004F5B3E /* LocationManager.swift */,
+				3CF0BB5E21ABF44C00E1C0A9 /* LaunchScreen.storyboard */,
+				3CF0BB6121ABF44C00E1C0A9 /* Info.plist */,
+			);
+			path = CarSharingApp;
+			sourceTree = "<group>";
+		};
+		3CF0BB6921ABF44C00E1C0A9 /* CarSharingAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				3CF0BB6A21ABF44C00E1C0A9 /* CarSharingAppTests.swift */,
+				3CF0BB6C21ABF44C00E1C0A9 /* Info.plist */,
+			);
+			path = CarSharingAppTests;
+			sourceTree = "<group>";
+		};
+		3CF0BB7421ABF44C00E1C0A9 /* CarSharingAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3CF0BB7521ABF44C00E1C0A9 /* CarSharingAppUITests.swift */,
+				3CF0BB7721ABF44C00E1C0A9 /* Info.plist */,
+			);
+			path = CarSharingAppUITests;
+			sourceTree = "<group>";
+		};
+		4B574C7C82D79F3F7B0BD56B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB0C440121C10DD90026ACCF /* CoreLocation.framework */,
+				3724CF4D360B1AE03D9AAF7A /* Pods_CarSharingApp.framework */,
+				9BBD31722583001E522FD88C /* Pods_CarSharingAppTests.framework */,
+				C774803ABE4EE25296A3E853 /* Pods_CarSharingAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C0444B949A85F72F9AB0B40 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A2552AC971885853B8F95C0 /* Pods-CarSharingApp.debug.xcconfig */,
+				2F5AF0F63D7B452B7ECFCB71 /* Pods-CarSharingApp.release.xcconfig */,
+				B3B0C83733BED0F4CED7B5E8 /* Pods-CarSharingAppTests.debug.xcconfig */,
+				36B7979E5AA0A466681B2A70 /* Pods-CarSharingAppTests.release.xcconfig */,
+				6763130F26B082ABADBE3F4A /* Pods-CarSharingAppUITests.debug.xcconfig */,
+				E160F00CCE1EB0AB287F946B /* Pods-CarSharingAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CF0BB5121ABF44900E1C0A9 /* CarSharingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CF0BB7A21ABF44C00E1C0A9 /* Build configuration list for PBXNativeTarget "CarSharingApp" */;
+			buildPhases = (
+				819C06974795400E5E9F5AF3 /* [CP] Check Pods Manifest.lock */,
+				3CF0BB4E21ABF44900E1C0A9 /* Sources */,
+				3CF0BB4F21ABF44900E1C0A9 /* Frameworks */,
+				3CF0BB5021ABF44900E1C0A9 /* Resources */,
+				DAF609E025C162D4799FD747 /* [CP] Copy Pods Resources */,
+				55FECC4ACCB8BBD328E0AC05 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarSharingApp;
+			productName = CarSharingApp;
+			productReference = 3CF0BB5221ABF44900E1C0A9 /* CarSharingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3CF0BB6521ABF44C00E1C0A9 /* CarSharingAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CF0BB7D21ABF44C00E1C0A9 /* Build configuration list for PBXNativeTarget "CarSharingAppTests" */;
+			buildPhases = (
+				85DD8AA0BA0D61F1FC7473AE /* [CP] Check Pods Manifest.lock */,
+				3CF0BB6221ABF44C00E1C0A9 /* Sources */,
+				3CF0BB6321ABF44C00E1C0A9 /* Frameworks */,
+				3CF0BB6421ABF44C00E1C0A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CF0BB6821ABF44C00E1C0A9 /* PBXTargetDependency */,
+			);
+			name = CarSharingAppTests;
+			productName = CarSharingAppTests;
+			productReference = 3CF0BB6621ABF44C00E1C0A9 /* CarSharingAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3CF0BB7021ABF44C00E1C0A9 /* CarSharingAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CF0BB8021ABF44C00E1C0A9 /* Build configuration list for PBXNativeTarget "CarSharingAppUITests" */;
+			buildPhases = (
+				C98BF06D0DE4BE0ED0E29B1D /* [CP] Check Pods Manifest.lock */,
+				3CF0BB6D21ABF44C00E1C0A9 /* Sources */,
+				3CF0BB6E21ABF44C00E1C0A9 /* Frameworks */,
+				3CF0BB6F21ABF44C00E1C0A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CF0BB7321ABF44C00E1C0A9 /* PBXTargetDependency */,
+			);
+			name = CarSharingAppUITests;
+			productName = CarSharingAppUITests;
+			productReference = 3CF0BB7121ABF44C00E1C0A9 /* CarSharingAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CF0BB4A21ABF44900E1C0A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Bojan Dimitrijevski";
+				TargetAttributes = {
+					3CF0BB5121ABF44900E1C0A9 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					3CF0BB6521ABF44C00E1C0A9 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 3CF0BB5121ABF44900E1C0A9;
+					};
+					3CF0BB7021ABF44C00E1C0A9 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 3CF0BB5121ABF44900E1C0A9;
+					};
+				};
+			};
+			buildConfigurationList = 3CF0BB4D21ABF44900E1C0A9 /* Build configuration list for PBXProject "CarSharingApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3CF0BB4921ABF44900E1C0A9;
+			productRefGroup = 3CF0BB5321ABF44900E1C0A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CF0BB5121ABF44900E1C0A9 /* CarSharingApp */,
+				3CF0BB6521ABF44C00E1C0A9 /* CarSharingAppTests */,
+				3CF0BB7021ABF44C00E1C0A9 /* CarSharingAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CF0BB5021ABF44900E1C0A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CF0BB6021ABF44C00E1C0A9 /* LaunchScreen.storyboard in Resources */,
+				3CF0BB5D21ABF44C00E1C0A9 /* Assets.xcassets in Resources */,
+				3CF0BB5B21ABF44900E1C0A9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CF0BB6421ABF44C00E1C0A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CF0BB6F21ABF44C00E1C0A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55FECC4ACCB8BBD328E0AC05 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CarSharingApp/Pods-CarSharingApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GooglePlacesSearchController/GooglePlacesSearchController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GooglePlacesSearchController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarSharingApp/Pods-CarSharingApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		819C06974795400E5E9F5AF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CarSharingApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85DD8AA0BA0D61F1FC7473AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CarSharingAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C98BF06D0DE4BE0ED0E29B1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CarSharingAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAF609E025C162D4799FD747 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CarSharingApp/Pods-CarSharingApp-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarSharingApp/Pods-CarSharingApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CF0BB4E21ABF44900E1C0A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB11951C21C2772B00A234E4 /* AutocompleteViewController.swift in Sources */,
+				3C990B0D21C9409800EA9A6A /* Ride.swift in Sources */,
+				3C990B1121C9414100EA9A6A /* Car.swift in Sources */,
+				FB2CDEFD21AC1B7E004F5B3E /* LocationManager.swift in Sources */,
+				3CF0BB8A21AC097700E1C0A9 /* NotificationsViewController.swift in Sources */,
+				3CF0BB8421AC091800E1C0A9 /* LogInViewController.swift in Sources */,
+				3C990B0F21C940CA00EA9A6A /* User.swift in Sources */,
+				3CF0BB8821AC096600E1C0A9 /* MyProfileViewController.swift in Sources */,
+				FB11D88621AC107300EECDBF /* startingPointViewController.swift in Sources */,
+				3CF0BB5621ABF44900E1C0A9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CF0BB6221ABF44C00E1C0A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CF0BB6B21ABF44C00E1C0A9 /* CarSharingAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CF0BB6D21ABF44C00E1C0A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CF0BB7621ABF44C00E1C0A9 /* CarSharingAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CF0BB6821ABF44C00E1C0A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CF0BB5121ABF44900E1C0A9 /* CarSharingApp */;
+			targetProxy = 3CF0BB6721ABF44C00E1C0A9 /* PBXContainerItemProxy */;
+		};
+		3CF0BB7321ABF44C00E1C0A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CF0BB5121ABF44900E1C0A9 /* CarSharingApp */;
+			targetProxy = 3CF0BB7221ABF44C00E1C0A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3CF0BB5921ABF44900E1C0A9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CF0BB5A21ABF44900E1C0A9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3CF0BB5E21ABF44C00E1C0A9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CF0BB5F21ABF44C00E1C0A9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3CF0BB7821ABF44C00E1C0A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3CF0BB7921ABF44C00E1C0A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3CF0BB7B21ABF44C00E1C0A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A2552AC971885853B8F95C0 /* Pods-CarSharingApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CarSharingApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mk.bojan.CarSharingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3CF0BB7C21ABF44C00E1C0A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F5AF0F63D7B452B7ECFCB71 /* Pods-CarSharingApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CarSharingApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mk.bojan.CarSharingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3CF0BB7E21ABF44C00E1C0A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3B0C83733BED0F4CED7B5E8 /* Pods-CarSharingAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CarSharingAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mk.bojan.CarSharingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarSharingApp.app/CarSharingApp";
+			};
+			name = Debug;
+		};
+		3CF0BB7F21ABF44C00E1C0A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36B7979E5AA0A466681B2A70 /* Pods-CarSharingAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CarSharingAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mk.bojan.CarSharingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarSharingApp.app/CarSharingApp";
+			};
+			name = Release;
+		};
+		3CF0BB8121ABF44C00E1C0A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6763130F26B082ABADBE3F4A /* Pods-CarSharingAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CarSharingAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mk.bojan.CarSharingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CarSharingApp;
+			};
+			name = Debug;
+		};
+		3CF0BB8221ABF44C00E1C0A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E160F00CCE1EB0AB287F946B /* Pods-CarSharingAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CarSharingAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mk.bojan.CarSharingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CarSharingApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CF0BB4D21ABF44900E1C0A9 /* Build configuration list for PBXProject "CarSharingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CF0BB7821ABF44C00E1C0A9 /* Debug */,
+				3CF0BB7921ABF44C00E1C0A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CF0BB7A21ABF44C00E1C0A9 /* Build configuration list for PBXNativeTarget "CarSharingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CF0BB7B21ABF44C00E1C0A9 /* Debug */,
+				3CF0BB7C21ABF44C00E1C0A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CF0BB7D21ABF44C00E1C0A9 /* Build configuration list for PBXNativeTarget "CarSharingAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CF0BB7E21ABF44C00E1C0A9 /* Debug */,
+				3CF0BB7F21ABF44C00E1C0A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CF0BB8021ABF44C00E1C0A9 /* Build configuration list for PBXNativeTarget "CarSharingAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CF0BB8121ABF44C00E1C0A9 /* Debug */,
+				3CF0BB8221ABF44C00E1C0A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CF0BB4A21ABF44900E1C0A9 /* Project object */;
+}
