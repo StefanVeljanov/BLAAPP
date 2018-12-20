@@ -1,22 +1,9 @@
-//
-//  ViewControllerCreateRide.swift
-//  CarSharingApp
-//
-//  Created by Stefan Veljanov on 11/26/18.
-//  Copyright © 2018 Bojan Dimitrijevski. All rights reserved.
-//
-
 import UIKit
 import GoogleMaps
 import GooglePlaces
 import CoreLocation
 import GooglePlacesSearchController
 import CoreLocation
-
-
-
-
-
 
 class ViewControllerCreateRide: UIViewController,CLLocationManagerDelegate{
     

@@ -23,5 +23,11 @@ target 'CarSharingApp' do
   pod 'GooglePlaces'
   pod 'GooglePlacePicker'
   pod 'GooglePlacesSearchController'
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
+  pod 'FacebookLogin'
+  pod 'FacebookCore'
   
 end
