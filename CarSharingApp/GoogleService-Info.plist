@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>222552501963-05kbiq3i63no7uoje3qif2ul1ejkf65h.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.222552501963-05kbiq3i63no7uoje3qif2ul1ejkf65h</string>
+	<key>API_KEY</key>
+	<string>AIzaSyALwTaul62mCnsRR6uh4QUj0Vr4ZHdglZA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>222552501963</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.mk.bojan.CarSharingApp</string>
+	<key>PROJECT_ID</key>
+	<string>vozime-504cc</string>
+	<key>STORAGE_BUCKET</key>
+	<string>vozime-504cc.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:222552501963:ios:267cbc62d769c064</string>
+	<key>DATABASE_URL</key>
+	<string>https://vozime-504cc.firebaseio.com</string>
+</dict>
+</plist>
