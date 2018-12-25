@@ -13,6 +13,12 @@
 		3C990B0D21C9409800EA9A6A /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C990B0C21C9409800EA9A6A /* Ride.swift */; };
 		3C990B0F21C940CA00EA9A6A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C990B0E21C940CA00EA9A6A /* User.swift */; };
 		3C990B1121C9414100EA9A6A /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C990B1021C9414100EA9A6A /* Car.swift */; };
+		3CE34CBE21D26D2000548B1D /* Spark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE34CB821D26D2000548B1D /* Spark.swift */; };
+		3CE34CBF21D26D2000548B1D /* SparkKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE34CB921D26D2000548B1D /* SparkKeys.swift */; };
+		3CE34CC021D26D2000548B1D /* SparkModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE34CBA21D26D2000548B1D /* SparkModels.swift */; };
+		3CE34CC121D26D2000548B1D /* SparkSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE34CBB21D26D2000548B1D /* SparkSetup.swift */; };
+		3CE34CC221D26D2000548B1D /* SparkExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE34CBC21D26D2000548B1D /* SparkExtensions.swift */; };
+		3CE34CC321D26D2000548B1D /* SparkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE34CBD21D26D2000548B1D /* SparkService.swift */; };
 		3CF0BB5621ABF44900E1C0A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF0BB5521ABF44900E1C0A9 /* AppDelegate.swift */; };
 		3CF0BB5B21ABF44900E1C0A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF0BB5921ABF44900E1C0A9 /* Main.storyboard */; };
 		3CF0BB5D21ABF44C00E1C0A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CF0BB5C21ABF44C00E1C0A9 /* Assets.xcassets */; };
@@ -55,6 +61,12 @@
 		3C990B0C21C9409800EA9A6A /* Ride.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
 		3C990B0E21C940CA00EA9A6A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3C990B1021C9414100EA9A6A /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		3CE34CB821D26D2000548B1D /* Spark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spark.swift; sourceTree = "<group>"; };
+		3CE34CB921D26D2000548B1D /* SparkKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SparkKeys.swift; sourceTree = "<group>"; };
+		3CE34CBA21D26D2000548B1D /* SparkModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SparkModels.swift; sourceTree = "<group>"; };
+		3CE34CBB21D26D2000548B1D /* SparkSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SparkSetup.swift; sourceTree = "<group>"; };
+		3CE34CBC21D26D2000548B1D /* SparkExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SparkExtensions.swift; sourceTree = "<group>"; };
+		3CE34CBD21D26D2000548B1D /* SparkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SparkService.swift; sourceTree = "<group>"; };
 		3CF0BB5221ABF44900E1C0A9 /* CarSharingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarSharingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CF0BB5521ABF44900E1C0A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CF0BB5A21ABF44900E1C0A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -133,11 +145,17 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		3C990B0B21C9404800EA9A6A /* TableCells */ = {
+		3CE34CB721D26D2000548B1D /* Spark */ = {
 			isa = PBXGroup;
 			children = (
+				3CE34CB821D26D2000548B1D /* Spark.swift */,
+				3CE34CB921D26D2000548B1D /* SparkKeys.swift */,
+				3CE34CBA21D26D2000548B1D /* SparkModels.swift */,
+				3CE34CBB21D26D2000548B1D /* SparkSetup.swift */,
+				3CE34CBC21D26D2000548B1D /* SparkExtensions.swift */,
+				3CE34CBD21D26D2000548B1D /* SparkService.swift */,
 			);
-			path = TableCells;
+			path = Spark;
 			sourceTree = "<group>";
 		};
 		3CF0BB4921ABF44900E1C0A9 = {
@@ -168,7 +186,7 @@
 				3CF0BB5521ABF44900E1C0A9 /* AppDelegate.swift */,
 				3CF0BB5921ABF44900E1C0A9 /* Main.storyboard */,
 				3C990B0921C9402100EA9A6A /* ViewControllers */,
-				3C990B0B21C9404800EA9A6A /* TableCells */,
+				3CE34CB721D26D2000548B1D /* Spark */,
 				3C990B0A21C9402A00EA9A6A /* Classes */,
 				3CF0BB5C21ABF44C00E1C0A9 /* Assets.xcassets */,
 				3CF0BB5E21ABF44C00E1C0A9 /* LaunchScreen.storyboard */,
@@ -481,7 +499,13 @@
 				FB6F153C21D0F1A6006CCC17 /* makeRideViewController.swift in Sources */,
 				3C990B0F21C940CA00EA9A6A /* User.swift in Sources */,
 				3CF0BB8821AC096600E1C0A9 /* MyProfileViewController.swift in Sources */,
+				3CE34CC121D26D2000548B1D /* SparkSetup.swift in Sources */,
 				3CF0BB5621ABF44900E1C0A9 /* AppDelegate.swift in Sources */,
+				3CE34CC021D26D2000548B1D /* SparkModels.swift in Sources */,
+				3CE34CBE21D26D2000548B1D /* Spark.swift in Sources */,
+				3CE34CBF21D26D2000548B1D /* SparkKeys.swift in Sources */,
+				3CE34CC221D26D2000548B1D /* SparkExtensions.swift in Sources */,
+				3CE34CC321D26D2000548B1D /* SparkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
