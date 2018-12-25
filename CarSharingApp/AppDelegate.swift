@@ -3,31 +3,25 @@ import GoogleMaps
 import GooglePlaces
 import Firebase
 import FBSDKCoreKit
-import FacebookCore
-
 
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
+
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-    
-        //FirebaseApp.configure()
-        Spark.start()
+        FBSDKApplicationDelegate.sharedInstance()?.application(application, didFinishLaunchingWithOptions: launchOptions)
+        
+        FirebaseApp.configure()
         GMSServices.provideAPIKey("AIzaSyB8pBcZ3_8llM-yKrnDll6g9EtGTQIL1Kw")
         GMSPlacesClient.provideAPIKey("AIzaSyB8pBcZ3_8llM-yKrnDll6g9EtGTQIL1Kw")
         
         return true
         
     }
-    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        return SDKApplicationDelegate.shared.application(app, open: url, options: options)
-    }
-//    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any)-> Bool{
-//        return (FBSDKApplicationDelegate.sharedInstance()?.application(application, open: url, sourceApplication:sourceApplication, annotation: annotation))!
-//    }
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -49,6 +43,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+
+    private func application(_ application:UIApplication, open url: URL, sourceApplication: String? , annotation : Any) -> Bool{
+        return FBSDKApplicationDelegate.sharedInstance().application(application, open : url, sourceApplication: sourceApplication, annotation: annotation)
     }
 }
 
