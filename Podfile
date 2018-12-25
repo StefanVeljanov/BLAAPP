@@ -19,15 +19,18 @@ target 'CarSharingApp' do
   
   #source 'https://github.com/CocoaPods/Specs.git'
 
-  pod 'GoogleMaps'
-  pod 'GooglePlaces'
-  pod 'GooglePlacePicker'
-  pod 'GooglePlacesSearchController'
-  pod 'Firebase/Core'
-  pod 'Firebase/Database'
-  pod 'Firebase/Auth'
-  pod 'Firebase/Storage'
-  pod 'FacebookLogin'
-  pod 'FacebookCore'
+  pod ‘GoogleMaps’
+  pod ‘GooglePlaces’
+  pod ‘GooglePlacePicker’
+  pod ‘GooglePlacesSearchController’
+  pod ‘Firebase/Core’
+  pod ‘Firebase/Database’
+  pod ‘Firebase/Auth’
+  pod ‘Firebase/Firestore’
+  pod ‘Firebase/Storage’
+  pod ‘FacebookLogin’
+  pod ‘FacebookCore’
+  pod ‘SwiftyJSON’
+  pod ‘JGProgressHUD’
   
 end
