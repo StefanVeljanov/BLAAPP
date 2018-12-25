@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -99,79 +100,257 @@
             </objects>
             <point key="canvasLocation" x="1284" y="563.56821589205401"/>
         </scene>
-        <!--View Controller Create Ride-->
+        <!--Make Ride View Controller-->
         <scene sceneID="eKU-s3-4x8">
             <objects>
-                <viewController id="thx-bA-Jkx" customClass="ViewControllerCreateRide" customModule="CarSharingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="thx-bA-Jkx" customClass="makeRideViewController" customModule="CarSharingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aNu-7A-Vqc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtQ-iz-z87">
-                                <rect key="frame" x="56" y="71" width="0.0" height="0.0"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sliki" translatesAutoresizingMaskIntoConstraints="NO" id="55y-sS-B0u">
+                                <rect key="frame" x="12" y="73" width="30" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Почетна локација" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJd-H8-2eB">
+                                <rect key="frame" x="60" y="79" width="202" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="slika2" translatesAutoresizingMaskIntoConstraints="NO" id="jYi-60-tKY">
+                                <rect key="frame" x="13" y="241" width="30" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYx-cH-iNy">
+                                <rect key="frame" x="293" y="333" width="70" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.82745098039999998" green="0.28627450980000002" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="избери">
+                                    <color key="titleColor" red="0.99193147199999998" green="1" blue="0.95201967139999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pickEndingPoint:" destination="thx-bA-Jkx" eventType="touchUpInside" id="gPK-sM-lJo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Време на почеток :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJO-Gq-biO">
+                                <rect key="frame" x="60" y="427" width="214" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="избери време" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yR5-Vi-1qR">
+                                <rect key="frame" x="17" y="494" width="301" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Име" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kg7-qA-Hzn">
+                                <rect key="frame" x="16" y="128" width="247" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Од каде би почнало возењето?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvt-Lx-KQX">
-                                <rect key="frame" x="8" y="80" width="359" height="24"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Адреса" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Efe-uX-sfT">
+                                <rect key="frame" x="13" y="178" width="247" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bac-Pf-kCK">
-                                <rect key="frame" x="48" y="170" width="212" height="30"/>
-                                <state key="normal" title="Искористи ја мојата локација">
-                                    <color key="titleColor" red="0.23971456120000001" green="0.3855381041" blue="0.44314585760000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Адреса" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mx4-RS-GjO">
+                                <rect key="frame" x="12" y="352" width="248" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Име" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKq-GR-GvJ">
+                                <rect key="frame" x="13" y="308" width="247" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Крајна локација" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaJ-Jq-UfL">
+                                <rect key="frame" x="60" y="241" width="182" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhD-0H-1ku">
+                                <rect key="frame" x="293" y="153" width="70" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.82745098039999998" green="0.28627450980000002" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.59215686274509804" green="0.29019607843137257" blue="0.25882352941176473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="избери">
+                                    <color key="titleColor" red="0.99193147199999998" green="1" blue="0.95201967139999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="MyCurrentLocation:" destination="thx-bA-Jkx" eventType="touchUpInside" id="3J8-Fb-DCM"/>
+                                    <action selector="pickPlace:" destination="thx-bA-Jkx" eventType="touchUpInside" id="TJE-QH-i3K"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sliki" translatesAutoresizingMaskIntoConstraints="NO" id="WaP-D3-g7S">
-                                <rect key="frame" x="8" y="170" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="HK4-R5-xR9"/>
-                                    <constraint firstAttribute="height" constant="30" id="ip2-je-rUQ"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="baN-pT-gpr">
+                                <rect key="frame" x="8" y="416" width="41" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y0Y-zl-iy8" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="216" width="375" height="402"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <searchBar contentMode="redraw" placeholder="Внесете адреса" translatesAutoresizingMaskIntoConstraints="NO" id="5ZI-C5-Tb7">
-                                <rect key="frame" x="0.0" y="108" width="375" height="56"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
-                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVd-41-ypK">
+                                <rect key="frame" x="299" y="542" width="58" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="next"/>
+                                <connections>
+                                    <segue destination="cfx-h0-Q7P" kind="show" identifier="MakeRide2" id="WDL-Rj-FqZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="mvt-Lx-KQX" firstAttribute="top" secondItem="zEk-pF-QnC" secondAttribute="top" constant="16" id="3BX-o2-KXf"/>
-                            <constraint firstItem="zEk-pF-QnC" firstAttribute="trailing" secondItem="mvt-Lx-KQX" secondAttribute="trailing" constant="8" id="4W1-WJ-Aui"/>
-                            <constraint firstItem="Bac-Pf-kCK" firstAttribute="top" secondItem="5ZI-C5-Tb7" secondAttribute="bottom" constant="6" id="5QN-JZ-Nj6"/>
-                            <constraint firstItem="5ZI-C5-Tb7" firstAttribute="trailing" secondItem="zEk-pF-QnC" secondAttribute="trailing" id="8wD-6Z-zv8"/>
-                            <constraint firstItem="Bac-Pf-kCK" firstAttribute="top" secondItem="WaP-D3-g7S" secondAttribute="top" id="Bav-gH-XWO"/>
-                            <constraint firstItem="y0Y-zl-iy8" firstAttribute="bottom" secondItem="zEk-pF-QnC" secondAttribute="bottom" id="CAB-d5-SYC"/>
-                            <constraint firstItem="y0Y-zl-iy8" firstAttribute="top" secondItem="Bac-Pf-kCK" secondAttribute="bottom" constant="16" id="EhV-aC-PqR"/>
-                            <constraint firstItem="WaP-D3-g7S" firstAttribute="leading" secondItem="zEk-pF-QnC" secondAttribute="leading" constant="8" id="Kb1-gq-7ci"/>
-                            <constraint firstItem="mvt-Lx-KQX" firstAttribute="leading" secondItem="zEk-pF-QnC" secondAttribute="leading" constant="8" id="XME-xa-YoK"/>
-                            <constraint firstItem="y0Y-zl-iy8" firstAttribute="leading" secondItem="zEk-pF-QnC" secondAttribute="leading" id="Ytq-9g-cm6"/>
-                            <constraint firstItem="5ZI-C5-Tb7" firstAttribute="leading" secondItem="zEk-pF-QnC" secondAttribute="leading" id="hFq-Mx-qEF"/>
-                            <constraint firstItem="Bac-Pf-kCK" firstAttribute="leading" secondItem="WaP-D3-g7S" secondAttribute="trailing" constant="10" id="ixN-W6-KYm"/>
-                            <constraint firstItem="5ZI-C5-Tb7" firstAttribute="top" secondItem="mvt-Lx-KQX" secondAttribute="bottom" constant="4" id="qqw-GK-Lf0"/>
-                            <constraint firstItem="zEk-pF-QnC" firstAttribute="trailing" secondItem="y0Y-zl-iy8" secondAttribute="trailing" id="xYM-dd-Nmp"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="zEk-pF-QnC"/>
                     </view>
                     <navigationItem key="navigationItem" id="o6E-Ct-y4d"/>
                     <connections>
-                        <outlet property="map1" destination="y0Y-zl-iy8" id="h2A-aW-RCJ"/>
+                        <outlet property="EndingPlaceAdressLabel" destination="mx4-RS-GjO" id="Ixk-Ud-97U"/>
+                        <outlet property="EndingPlaceNameLabel" destination="WKq-GR-GvJ" id="vj5-Ze-ZMg"/>
+                        <outlet property="StartingPlaceAdressLabel" destination="Efe-uX-sfT" id="mVc-Uy-6p7"/>
+                        <outlet property="StartingPlaceNameAdressLabel" destination="Kg7-qA-Hzn" id="9jG-FE-Fwh"/>
+                        <outlet property="timeTextField" destination="yR5-Vi-1qR" id="jO3-2F-ZN4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7FI-kZ-vc5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="852" y="1282.3088455772115"/>
+        </scene>
+        <!--Make Ride2 View Controller-->
+        <scene sceneID="NGm-gN-1b5">
+            <objects>
+                <viewController id="cfx-h0-Q7P" customClass="makeRide2ViewController" customModule="CarSharingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2q5-Zl-ytL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Слободни седишта :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KtV-Cy-iu9">
+                                <rect key="frame" x="0.0" y="84" width="335" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vos-pp-Eun">
+                                <rect key="frame" x="82" y="141" width="11" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Дали дозволувате миленичиња?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWl-CP-mvE">
+                                <rect key="frame" x="20" y="200" width="335" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Дали дозволувате цигари?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ws3-vW-fRJ">
+                                <rect key="frame" x="16" y="321" width="335" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lW8-H1-8f1">
+                                <rect key="frame" x="42" y="562" width="300" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.82745098039999998" green="0.28627450980000002" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Креирај возење">
+                                    <color key="titleColor" red="0.99193147199999998" green="1" blue="0.95201967139999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="createRide:" destination="cfx-h0-Q7P" eventType="touchUpInside" id="lB9-eG-Tfl"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="seat" translatesAutoresizingMaskIntoConstraints="NO" id="Xn3-yd-HYr">
+                                <rect key="frame" x="26" y="78" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fGA-ir-AaN">
+                                <rect key="frame" x="82" y="251" width="210" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Да"/>
+                                    <segment title="Не"/>
+                                </segments>
+                                <color key="tintColor" red="0.82745098039999998" green="0.28627450980000002" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="petIndexChangedWithSender:" destination="cfx-h0-Q7P" eventType="valueChanged" id="OZa-RD-yzK"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="osv-mK-8IU">
+                                <rect key="frame" x="82" y="383" width="210" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Да"/>
+                                    <segment title="Не"/>
+                                </segments>
+                                <color key="tintColor" red="0.82745098039999998" green="0.28627450980000002" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="cigarettesIndexChangedWithSender:" destination="cfx-h0-Q7P" eventType="valueChanged" id="49r-tQ-kgJ"/>
+                                </connections>
+                            </segmentedControl>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="7" translatesAutoresizingMaskIntoConstraints="NO" id="PC5-hE-G7P">
+                                <rect key="frame" x="128" y="137" width="94" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.82745098039999998" green="0.28627450980000002" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="stepperAction:" destination="cfx-h0-Q7P" eventType="touchUpInside" id="8fl-XP-f7M"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Цена за возењето по седиште" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CzB-XO-FWc">
+                                <rect key="frame" x="36" y="438" width="299" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Внесете цена" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="El9-yd-QCg">
+                                <rect key="frame" x="65" y="480" width="245" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="njE-dW-A85"/>
+                    </view>
+                    <connections>
+                        <outlet property="cigarettesSegmentedContol" destination="osv-mK-8IU" id="yab-Y5-kQU"/>
+                        <outlet property="petSegmentedControl" destination="fGA-ir-AaN" id="U4r-43-Wtb"/>
+                        <outlet property="priceTextField" destination="El9-yd-QCg" id="XZw-qk-qYn"/>
+                        <outlet property="stepperLabel" destination="vos-pp-Eun" id="OYo-Yd-1yL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rju-xP-uvf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1612" y="1281.4092953523239"/>
         </scene>
         <!--Известувања-->
         <scene sceneID="FqE-9c-FQr">
@@ -278,10 +457,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="N08-0L-64t">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.82745098039999998" green="0.28627450980000002" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="thx-bA-Jkx" kind="relationship" relationship="rootViewController" id="V9X-nQ-ZXh"/>
+                        <segue destination="thx-bA-Jkx" kind="relationship" relationship="rootViewController" id="Vjo-ez-sck"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3b2-uo-noV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -310,11 +490,15 @@
     </scenes>
     <resources>
         <image name="FbLogInIcon" width="50" height="50"/>
+        <image name="calendar" width="256" height="256"/>
         <image name="carTabBarIcon" width="30" height="30"/>
+        <image name="next" width="256" height="256"/>
         <image name="notificationTabBarIcon" width="30" height="30"/>
         <image name="plusTabBarIcon" width="30" height="30"/>
         <image name="profileTabBarIcon" width="30" height="30"/>
         <image name="searchTabBarIcon" width="30" height="30"/>
+        <image name="seat" width="512" height="512"/>
+        <image name="slika2" width="225" height="225"/>
         <image name="sliki" width="195" height="259"/>
     </resources>
 </document>

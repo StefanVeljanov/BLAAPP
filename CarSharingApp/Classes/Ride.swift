@@ -9,10 +9,9 @@ class Ride{
     let car:Car?
     let pet:Bool
     let cigarette:Bool
-    let radio:Bool
     let price:String
     
-    init(user: User,from:String,to:String,time:String,freeSpaces:String,car:Car,pet:Bool,cigarette:Bool,radio:Bool,price:String) {
+    init(user: User,from:String,to:String,time:String,freeSpaces:String,car:Car,pet:Bool,cigarette:Bool,price:String) {
         users.append(user)
         self.from=from
         self.to=to
@@ -21,7 +20,6 @@ class Ride{
         self.car=car
         self.pet=pet
         self.cigarette=cigarette
-        self.radio=radio
         self.price=price
     }
 }

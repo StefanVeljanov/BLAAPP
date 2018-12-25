@@ -25,9 +25,8 @@
 		C4DB5FC7EEA00F74E1960363 /* Pods_CarSharingAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C774803ABE4EE25296A3E853 /* Pods_CarSharingAppUITests.framework */; };
 		F9E0E5E6EB4C9C6E51066B4C /* Pods_CarSharingAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BBD31722583001E522FD88C /* Pods_CarSharingAppTests.framework */; };
 		FB0C440221C10DD90026ACCF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB0C440121C10DD90026ACCF /* CoreLocation.framework */; };
-		FB11951C21C2772B00A234E4 /* AutocompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB11951B21C2772B00A234E4 /* AutocompleteViewController.swift */; };
-		FB11D88621AC107300EECDBF /* startingPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB11D88521AC107300EECDBF /* startingPointViewController.swift */; };
-		FB2CDEFD21AC1B7E004F5B3E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2CDEFC21AC1B7E004F5B3E /* LocationManager.swift */; };
+		FB6F153821D0F0B2006CCC17 /* makeRide2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6F153721D0F0B2006CCC17 /* makeRide2ViewController.swift */; };
+		FB6F153C21D0F1A6006CCC17 /* makeRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6F153B21D0F1A6006CCC17 /* makeRideViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,9 +77,8 @@
 		C774803ABE4EE25296A3E853 /* Pods_CarSharingAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarSharingAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E160F00CCE1EB0AB287F946B /* Pods-CarSharingAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarSharingAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarSharingAppUITests/Pods-CarSharingAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FB0C440121C10DD90026ACCF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		FB11951B21C2772B00A234E4 /* AutocompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutocompleteViewController.swift; sourceTree = "<group>"; };
-		FB11D88521AC107300EECDBF /* startingPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startingPointViewController.swift; sourceTree = "<group>"; };
-		FB2CDEFC21AC1B7E004F5B3E /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		FB6F153721D0F0B2006CCC17 /* makeRide2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makeRide2ViewController.swift; sourceTree = "<group>"; };
+		FB6F153B21D0F1A6006CCC17 /* makeRideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makeRideViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,9 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				3CF0BB8321AC091800E1C0A9 /* LogInViewController.swift */,
-				FB11D88521AC107300EECDBF /* startingPointViewController.swift */,
+				FB6F153B21D0F1A6006CCC17 /* makeRideViewController.swift */,
+				FB6F153721D0F0B2006CCC17 /* makeRide2ViewController.swift */,
 				3CF0BB8721AC096600E1C0A9 /* MyProfileViewController.swift */,
-				FB11951B21C2772B00A234E4 /* AutocompleteViewController.swift */,
 				3CF0BB8921AC097700E1C0A9 /* NotificationsViewController.swift */,
 			);
 			path = ViewControllers;
@@ -173,7 +171,6 @@
 				3C990B0B21C9404800EA9A6A /* TableCells */,
 				3C990B0A21C9402A00EA9A6A /* Classes */,
 				3CF0BB5C21ABF44C00E1C0A9 /* Assets.xcassets */,
-				FB2CDEFC21AC1B7E004F5B3E /* LocationManager.swift */,
 				3CF0BB5E21ABF44C00E1C0A9 /* LaunchScreen.storyboard */,
 				3C54278421C9693100CFFBB0 /* GoogleService-Info.plist */,
 				3CF0BB6121ABF44C00E1C0A9 /* Info.plist */,
@@ -361,8 +358,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CarSharingApp/Pods-CarSharingApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
@@ -377,8 +372,6 @@
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
@@ -401,15 +394,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-CarSharingApp-checkManifestLockResult.txt",
 			);
@@ -423,15 +412,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-CarSharingAppTests-checkManifestLockResult.txt",
 			);
@@ -445,15 +430,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-CarSharingAppUITests-checkManifestLockResult.txt",
 			);
@@ -467,8 +448,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CarSharingApp/Pods-CarSharingApp-resources.sh",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
@@ -476,8 +455,6 @@
 				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
@@ -495,16 +472,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB11951C21C2772B00A234E4 /* AutocompleteViewController.swift in Sources */,
+				FB6F153821D0F0B2006CCC17 /* makeRide2ViewController.swift in Sources */,
 				3C990B0D21C9409800EA9A6A /* Ride.swift in Sources */,
 				3C990B1121C9414100EA9A6A /* Car.swift in Sources */,
-				FB2CDEFD21AC1B7E004F5B3E /* LocationManager.swift in Sources */,
 				3CF0BB8A21AC097700E1C0A9 /* NotificationsViewController.swift in Sources */,
 				3CF0BB8421AC091800E1C0A9 /* LogInViewController.swift in Sources */,
 				3C92E2BA21C975BB00B6D310 /* ButtonClass.swift in Sources */,
+				FB6F153C21D0F1A6006CCC17 /* makeRideViewController.swift in Sources */,
 				3C990B0F21C940CA00EA9A6A /* User.swift in Sources */,
 				3CF0BB8821AC096600E1C0A9 /* MyProfileViewController.swift in Sources */,
-				FB11D88621AC107300EECDBF /* startingPointViewController.swift in Sources */,
 				3CF0BB5621ABF44900E1C0A9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -683,6 +659,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CarSharingApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -701,6 +678,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CarSharingApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

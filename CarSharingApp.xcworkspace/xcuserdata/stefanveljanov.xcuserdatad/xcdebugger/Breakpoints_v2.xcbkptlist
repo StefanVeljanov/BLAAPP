@@ -19,5 +19,83 @@
             landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CarSharingApp/ViewControllers/makeRide2ViewController.swift"
+            timestampString = "567430575.247328"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "6"
+            endingLineNumber = "6"
+            landmarkName = "makeRide2ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CarSharingApp.makeRide2ViewController.petSegmentedControl.getter : weak Swift.Optional&lt;__C.UISegmentedControl&gt;"
+                  moduleName = "CarSharingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/stefanveljanov/Desktop/BLAAP/CarSharingApp/ViewControllers/makeRide2ViewController.swift"
+                  timestampString = "567430492.736371"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CarSharingApp.makeRide2ViewController.petSegmentedControl.setter : weak Swift.Optional&lt;__C.UISegmentedControl&gt;"
+                  moduleName = "CarSharingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/stefanveljanov/Desktop/BLAAP/CarSharingApp/ViewControllers/makeRide2ViewController.swift"
+                  timestampString = "567430492.740847"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CarSharingApp.makeRide2ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; CarSharingApp.makeRide2ViewController"
+                  moduleName = "CarSharingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/stefanveljanov/Desktop/BLAAP/CarSharingApp/ViewControllers/makeRide2ViewController.swift"
+                  timestampString = "567430492.7437201"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "186">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CarSharingApp.makeRide2ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;CarSharingApp.makeRide2ViewController&gt;"
+                  moduleName = "CarSharingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/stefanveljanov/Desktop/BLAAP/CarSharingApp/ViewControllers/makeRide2ViewController.swift"
+                  timestampString = "567430492.746208"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "157">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
